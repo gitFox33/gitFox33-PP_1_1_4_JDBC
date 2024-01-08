@@ -10,8 +10,9 @@ import java.util.List;
 
 
 public class UserDaoHibernateImpl implements UserDao {
-    private Transaction transaction = null;
+    private Transaction transaction;
 
+    public UserDaoHibernateImpl() {}
 
     @Override
     public void createUsersTable() {
